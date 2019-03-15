@@ -41,3 +41,5 @@ gem 'materialize-sass', '~> 1.0.0'
 
 gem 'jquery-rails'
 gem 'jquery-turbolinks' 
+
+gem 'devise', '~> 4.6', '>= 4.6.1'
