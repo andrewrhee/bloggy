@@ -14,5 +14,6 @@
 //= require jquery.turbolinks 
 //= require rails-ujs
 //= require materialize-sprockets 
+//= require ckeditor/init 
 //= require turbolinks
 //= require_tree .

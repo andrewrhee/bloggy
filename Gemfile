@@ -45,3 +45,9 @@ gem 'jquery-turbolinks'
 
 gem 'devise', '~> 4.6', '>= 4.6.1'
 gem 'pundit', '~> 2.0', '>= 2.0.1'
+
+# for image attachments
+gem 'paperclip'
+
+# for WYSIWYG editor
+gem 'ckeditor' 
