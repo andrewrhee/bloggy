@@ -38,3 +38,6 @@ gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw, :jruby]
 # for normalize rails
 gem 'normalize-rails' 
 gem 'materialize-sass', '~> 1.0.0'
+
+gem 'jquery-rails'
+gem 'jquery-turbolinks' 
