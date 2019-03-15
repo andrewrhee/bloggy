@@ -1,32 +1,27 @@
-<%= form_with(model: blog, local: true) do |form| %>
-  <% if blog.errors.any? %>
-    <div id="error_explanation">
-      <h2><%= pluralize(blog.errors.count, "error") %> prohibited this blog from being saved:</h2>
-
-      <ul>
-      <% blog.errors.full_messages.each do |message| %>
-        <li><%= message %></li>
+<div class="row">
+  <div class="col s12">
+    <div class="card-panel">
+      <%= form_for(@blog) do |f| %>
+        <!-- blog title -->
+        <div class="input-field"> 
+          <%= f.label :title %>
+          <%= f.text_field :title, required: true, autofocus: true %>
+        </div>
+        <!-- blog content -->
+        <div class="input-field">
+          <%= f.label :content %>
+          <%= f.text_area :content, id: "blog_content", required: true, class: "materialize-textarea" %>
+        </div>
+        <!-- blog publish -->
+        <p>
+          <%= f.check_box :publish, id: 'publish' %>
+          <%= f.label :publish, id: 'publish' %>
+        </p>
+        <!-- Submit form -->
+        <div class="input-field center">
+          <%= f.submit class: "btn" %>
+        </div>
       <% end %>
-      </ul>
     </div>
-  <% end %>
-
-  <div class="field">
-    <%= form.label :title %>
-    <%= form.text_field :title, id: :blog_title %>
   </div>
-
-  <div class="field">
-    <%= form.label :content %>
-    <%= form.text_area :content, id: :blog_content %>
-  </div>
-
-  <div class="field">
-    <%= form.label :publish %>
-    <%= form.check_box :publish, id: :blog_publish %>
-  </div>
-
-  <div class="actions">
-    <%= form.submit %>
-  </div>
-<% end %>
+</div> 

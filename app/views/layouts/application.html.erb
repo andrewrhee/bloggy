@@ -5,7 +5,8 @@
     <meta name="viewport" content="width=device-width, initialscale=1.0"/> 
     <title>Bloggy</title>
     <%= csrf_meta_tags %>
-
+    
+    
     <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
     <!--Import Google Icon Font-->
     <link href="http://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet"> 
@@ -18,7 +19,7 @@
     <main>
       <%= yield %>
     </main>
-    
+
     <%= render 'shared/footer' %> 
   </body>
 </html>
